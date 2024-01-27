@@ -237,7 +237,7 @@ const OyunHusnuEhedov = (ctx, chatId) => {
 					Degisken(`
 						🎨➪ Fotodakı şəxs: *${rightAnswer} ${HusnuEhedov(rightAnswer, "yaşında", "yaşında", "yaşında")}*\n*🎯➪ Çikolata Qazananlar:⤵️*
 
-						${top.sort((a, b) => b.addScore - a.addScore).map((member, index) => `${["🥇","🥈","🥉"][index] || "⚡️"} ${index + 1}. *${member.firstName}*: ${ArtiEksi(member.addScore)}`).join("\n")}
+						${top.sort((a, b) => b.addScore - a.addScore).map((member, index) => `${["🥇","🥈","🥉"][index] || "🔘"} ${index + 1}. *${member.firstName}*: ${ArtiEksi(member.addScore)}`).join("\n")}
 					`),
 					{
 						reply_to_message_id: guessMessage.message_id,
@@ -399,7 +399,7 @@ ${(top).sort((a, b) => b.score - a.score).slice(0, 20).map((member, index) => `$
 
 bot.command("help", (ctx) => {
     return ctx.replyWithMarkdown(Degisken(`
-        🤖[GünelGame](http://t.me/GunelGameBot) Kömək Əmrlər Bunlardır.⤵️\n\nℹ️Qayda budur: Mən sizə şəkillər göndərirəm və siz kateqoriyaya uyğun rəqəmlərlə təxmin etməlisiniz.\nİlk olaraq qrupa əlavə edin və qrupda media izinizin olmasını unutmayın! və ya botu administrator edin.\nSonra Commands ilə oyuna başlayın.\n\n📚Əmrlərin siyahısı⤵️\n🌆 /game - Oyuna başlayın\n📛 /stop - oyunu dayandırın \n📊 /gbal - Oyunçuların xallarını göstərir. \n🌍 /global - Qlobal Ballar. \nℹ️ /help - Müəlumat üçün. \n👤 /info - İstifadəçi haqqında məlumat. \n🆔 /id - Qrup idsi haqqında məlumat.`))
+        GünelGame! Kömək Əmrlər Bunlardır.⤵️\n\nℹ️Qayda budur: Mən sizə şəkillər göndərirəm və siz kateqoriyaya uyğun rəqəmlərlə təxmin etməlisiniz.\nİlk olaraq qrupa əlavə edin və qrupda media izinizin olmasını unutmayın! və ya botu administrator edin.\nSonra Commands ilə oyuna başlayın.\n\n📚Əmrlərin siyahısı⤵️\n🌆 /game - Oyuna başlayın\n📛 /stop - oyunu dayandırın \n📊 /gbal - Oyunçuların xallarını göstərir. \n🌍 /global - Qlobal Ballar. \nℹ️ /help - Müəlumat üçün. \n👤 /info - İstifadəçi haqqında məlumat. \n🆔 /id - Qrup idsi haqqında məlumat.`))
 })
 
 bot.command("info", async (ctx) => {
@@ -429,7 +429,7 @@ bot.start(async (ctx) => {
             inline_keyboard:[
                 [{text:'➕ Qrupa Əlavə Et ➕', url:`https://t.me/${process.env.BOT_ISMI}?startgroup=true`}],
                 [{text:'Rəsmi Kanalımız ✅', url:`https://t.me/FerooResmi`},{text:'Support 👾', url:`https://t.me/GunelSupport`}],
-		     [{text:'GünekGame', callback_data:'vip'},{text:'Digər Botlar 🤖', url:`https://t.me/FerooBotlar`}]
+		     [{text:'GünelGame', callback_data:'vip'},{text:'Digər Botlar 🤖', url:`https://t.me/FerooBotlar`}]
             ]
         }
     })
