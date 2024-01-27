@@ -56,7 +56,7 @@ bot.command("grupsayi", async (ctx) => {
         if (comments && comments.length > 0) {
             await ctx.replyWithHTML(`<i>Grup sayısı:  ${comments.length}</i>`)
         } else {
-            ctx.reply('Oyun hələ botda oynamayıb.🥲')
+            ctx.reply('Oyun hələ botda oynanmayıb.🥲')
         }
     })
 });
@@ -179,7 +179,7 @@ const RaundMesajHusnuEhedov = (chatId, round, time) => {
 			
 			""	
 			
-			}${"⚡️".repeat(time)}${"✨".repeat(config.emojiSaniye - time)}`)}
+			}${"⚪".repeat(time)}${"🔘".repeat(config.emojiSaniye - time)}`)}
 
 
 const OyunHusnuEhedov = (ctx, chatId) => {
@@ -399,7 +399,7 @@ ${(top).sort((a, b) => b.score - a.score).slice(0, 20).map((member, index) => `$
 
 bot.command("help", (ctx) => {
     return ctx.replyWithMarkdown(Degisken(`
-        GünelGame! Kömək Əmrlər Bunlardır.⤵️\n\nℹ️Qayda budur: Mən sizə şəkillər göndərirəm və siz kateqoriyaya uyğun rəqəmlərlə təxmin etməlisiniz.\nİlk olaraq qrupa əlavə edin və qrupda media izinizin olmasını unutmayın! və ya botu administrator edin.\nSonra Commands ilə oyuna başlayın.\n\n📚Əmrlərin siyahısı⤵️\n🌆 /game - Oyuna başlayın\n📛 /stop - oyunu dayandırın \n📊 /gbal - Oyunçuların xallarını göstərir. \n🌍 /global - Qlobal Ballar. \nℹ️ /help - Müəlumat üçün. \n👤 /info - İstifadəçi haqqında məlumat. \n🆔 /id - Qrup idsi haqqında məlumat.`))
+        GünelGame! Kömək Əmrlər Bunlardır.\n\nℹ️Qayda budur: Mən sizə şəkillər göndərirəm və siz kateqoriyaya uyğun rəqəmlərlə təxmin etməlisiniz.\nİlk olaraq qrupa əlavə edin və qrupda media izinizin olmasını unutmayın! və ya botu administrator edin.\nSonra Commands ilə oyuna başlayın.\n\n📚Əmrlərin siyahısı⤵️\n🌆 /game - Oyuna başlayın\n📛 /stop - oyunu dayandırın \n📊 /gbal - Oyunçuların xallarını göstərir. \n🌍 /global - Qlobal Ballar. \nℹ️ /help - Müəlumat üçün. \n👤 /info - İstifadəçi haqqında məlumat. \n🆔 /id - Qrup idsi haqqında məlumat.`))
 })
 
 bot.command("info", async (ctx) => {
