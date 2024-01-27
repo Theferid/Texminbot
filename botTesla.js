@@ -294,7 +294,7 @@ bot.command("game", (ctx) => {
 		else {
 			dbChatAlHusnuEhedov(chatId)
 		}
-		ctx.replyWithHTML(`<b><a href="tg://user?id=${ctx.from.id}">${ctx.from.first_name}</a> Tərəfindən,\n\nℹ️ K.M Şəkil Oyun Botu başladı.🎉</b>`)
+		ctx.replyWithHTML(`<b><a href="tg://user?id=${ctx.from.id}">${ctx.from.first_name}</a> Tərəfindən,\n\nℹ️ Günel Təxmin Oyunu başladı.🎉</b>`)
 		OyunHusnuEhedov(ctx, chatId)
 	}
 	else {
