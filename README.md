@@ -2,4 +2,4 @@
 Sekil Oyun Bot,
 
 <b>HEROKU'LA DAĞIDIN</b>
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Theferid/Texminbot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Theferid/Texminbot.git)
