@@ -437,7 +437,7 @@ bot.start(async (ctx) => {
 
 bot.action('start', ctx=>{
     ctx.deleteMessage()
-    ctx.replyWithMarkdown(`🤖 Salam Mənim adım [GünelGame](http://t.me/GunelGameBot), Şəkillərin yaşları təxmin edərək əyləncə vaxd keçirmək üçün yaradılmış şəkil təxmin bot.\n\n🤖 Ətrafli Məlumat üçün /help əmrinə toxunun.
+    ctx.replyWithMarkdown(`**🤖 Salam Mənim adım GünelGame!\nŞəkillərin yaşları təxmin edərək əyləncə vaxd keçirmək üçün yaradılmış şəkil təxmin bot.\n\n🤖 Ətrafli Məlumat üçün /help əmrinə toxunun.**
         `,{
         reply_markup:{
             inline_keyboard:[
