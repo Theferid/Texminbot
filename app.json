@@ -7,23 +7,23 @@
   "env": {
     "TOKEN": {
       "description": "@BotFather'dan oluşturduğunuz botun tokeni.",
-      "value": "5387573671:AAGzNu_39T1sumOmUOQGOU2AJbsXNtuBxI0"
+      "value": "6444897538:AAEW0pW4wK-W1Id8KSdvZ6sBe5Hn2o8E6LA"
     },
     "ID_BOT": {
       "description": "Botun ID Yazın (İlk Rakamlar)",
-      "value": "5387573671"
+      "value": "6444897538"
     },
     "BOT_ISMI": {
       "description": "Botun Kullanıcı Adını '@' Olmadan Yazın",
-      "value": "KsjdjdhheududueeuBOT"
+      "value": "GunelGameBot"
     },
     "RAUND_SAYI": {
       "description": "RAUND SAYISI (3-5) İdeal aralık ",
-      "value": "3"
+      "value": "20"
     },
     "SANIYE": {
       "description": "Resimlerin Değişmesi Süresi / 10000=10 Saniye",
-      "value": "10000"
+      "value": "1500"
       }
   },
   "buildpacks": [
